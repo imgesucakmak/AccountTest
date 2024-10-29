@@ -33,10 +33,14 @@ public int getBakiye() {
   
  
 public void depositMoney(int para) { 
-         bakiye=bakiye+para; }	         }
+        if (para < 0) {
+            System.out.println("Hata: Yatırılan miktar sıfırdan küçük olamaz.");
+        } else {
+            bakiye += para;}  }
+       	         
 		
 		
-		
+  }		
 	
 	
 
